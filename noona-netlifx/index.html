@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Now Playing Movies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <h1 class="logo">NETLIFX</h1>
+      <p class="tagline">현재 상영작</p>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>지금 극장에서 만나는 영화</h2>
+      </section>
+
+      <section>
+        <div id="movie-grid" class="movie-grid"></div>
+      </section>
+    </main>
+
+    <template id="movie-card-template">
+      <article class="movie-card">
+        <img class="movie-poster" alt="" loading="lazy" />
+        <h3 class="movie-title"></h3>
+        <p class="movie-release-date"></p>
+      </article>
+    </template>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
