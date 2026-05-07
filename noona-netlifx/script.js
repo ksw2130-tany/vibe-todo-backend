@@ -1,5 +1,5 @@
 const API_KEY = "37f8dab1fef9c1b4f7c2d860e27c2edd";
-const NOW_PLAYING_URL = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=ko-KR&page=1`;
+const NOW_PLAYING_URL = `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=en-US&page=1`;
 const POSTER_BASE_URL = "https://image.tmdb.org/t/p/w500";
 
 const movieGrid = document.getElementById("movie-grid");
